@@ -1,0 +1,14 @@
+services:
+  db:
+    image: postgres:16
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: easyslr
+      POSTGRES_PASSWORD: easyslr
+      POSTGRES_DB: easyslr
+    volumes:
+      - easyslr_pgdata:/var/lib/postgresql/data
+
+volumes:
+  easyslr_pgdata:
