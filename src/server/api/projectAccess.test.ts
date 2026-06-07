@@ -27,8 +27,8 @@ describe("project access helpers", () => {
 
 describe("review update metadata", () => {
   it("records reviewer metadata when status changes", () => {
-    const previousStatus: string = "PENDING";
-    const nextStatus: string = "INCLUDE";
+    const previousStatus = "PENDING";
+    const nextStatus = "INCLUDE";
     const statusChanged = nextStatus !== previousStatus;
 
     expect(statusChanged).toBe(true);
